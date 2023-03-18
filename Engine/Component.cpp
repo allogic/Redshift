@@ -1,0 +1,19 @@
+#include <Engine/Component.h>
+
+///////////////////////////////////////////////////////////
+// Implementation
+///////////////////////////////////////////////////////////
+
+namespace rs
+{
+  Component::Component(Actor* Actor)
+    : mActor{ Actor }
+  {
+
+  }
+
+  Component::~Component()
+  {
+
+  }
+}

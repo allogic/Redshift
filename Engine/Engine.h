@@ -1,0 +1,22 @@
+﻿#pragma once
+
+#include <Common/Types.h>
+
+///////////////////////////////////////////////////////////
+// Forward Declarations
+///////////////////////////////////////////////////////////
+
+struct GLFWwindow;
+
+///////////////////////////////////////////////////////////
+// Definition
+///////////////////////////////////////////////////////////
+
+namespace rs
+{
+  static void GlfwDebugProc(I32 Error, char const* Msg);
+
+  static void GlDebugCallback(U32 Source, U32 Type, U32 Id, U32 Severity, I32 Length, char const* Msg, void const* UserParam);
+}
+
+rs::I32 main();
